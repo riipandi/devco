@@ -8,7 +8,7 @@ addons:
   mariadb: "10.3"
 
 env:
-  - TRAVIS_NODE_VERSION="10"
+  - TRAVIS_NODE_VERSION="8"
 
 matrix:
   fast_finish: true
