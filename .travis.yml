@@ -1,0 +1,51 @@
+language: php
+
+# php:
+#   - "7.2"
+#   - "7.3"
+
+addons:
+  mariadb: "10.3"
+
+env:
+  - TRAVIS_NODE_VERSION="10"
+
+matrix:
+  fast_finish: true
+  include:
+    - php: "7.2"
+    - php: "7.3"
+
+notifications:
+  email: false
+
+cache:
+  yarn: true
+  directories:
+    - $HOME/.composer/cache
+    - node_modules
+    - vendor
+
+services:
+  - memcached
+  - redis-server
+
+before_script:
+  - cp .env.travis .env
+  - php artisan key:generate
+  - php artisan migrate:fresh
+
+before_install:
+  - phpenv config-rm xdebug.ini || true
+  - printf "\n" | pecl install -f redis
+  - echo "extension = memcached.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+  - travis_retry composer self-update
+  - mysql -e 'CREATE DATABASE IF NOT EXISTS testing;'
+
+install:
+  - travis_retry composer install --dev --no-interaction --optimize-autoloader --no-suggest
+  - travis_retry yarn install
+  - travis_retry yarn production
+
+script:
+  - vendor/bin/phpunit --coverage-text
