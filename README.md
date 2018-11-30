@@ -6,6 +6,7 @@
 
 <p align="center">
   <a href="https://travis-ci.org/riipandi/devco"><img src="https://travis-ci.org/riipandi/devco.svg" alt="Build Status"></a>
+  <a href="https://buddy.works/"><img src="https://app.buddy.works/ruhaycreative/devco/pipelines/pipeline/162534/badge.svg?token=d7c3e693bc482a0e18287637dd2d22e5545e4b8692ee9693373adc64036f922d" alt="Deploy Status"></a>
   <a href="https://codeclimate.com/github/riipandi/devco/maintainability"><img src="https://api.codeclimate.com/v1/badges/5b7c15adca5e099faa23/maintainability"></a>
   <a href="https://codeclimate.com/github/riipandi/devco/test_coverage"><img src="https://api.codeclimate.com/v1/badges/5b7c15adca5e099faa23/test_coverage"></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg" alt="License"></a>
