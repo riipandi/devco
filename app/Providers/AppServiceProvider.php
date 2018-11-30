@@ -28,8 +28,8 @@ class AppServiceProvider extends ServiceProvider
         Passport::ignoreMigrations();
 
         // Laravel Telescope local environemnt only.
-        if ($this->app->isLocal()) {
-            $this->app->register(TelescopeServiceProvider::class);
-        }
+        // if ($this->app->isLocal()) {
+        //     $this->app->register(TelescopeServiceProvider::class);
+        // }
     }
 }
