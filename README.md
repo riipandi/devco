@@ -10,7 +10,6 @@
   <a href="https://codeclimate.com/github/riipandi/devco/maintainability"><img src="https://api.codeclimate.com/v1/badges/5b7c15adca5e099faa23/maintainability"></a>
   <a href="https://codeclimate.com/github/riipandi/devco/test_coverage"><img src="https://api.codeclimate.com/v1/badges/5b7c15adca5e099faa23/test_coverage"></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg" alt="License"></a>
-  <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" alt="Open Source Love">
 </p>
 
 ---
