@@ -73,6 +73,7 @@ Untuk pertanyaan, silahkan mengirimkan email ke ripandi@pm.me.
 ## Lisensi
 
 Program ini adalah perangkat lunak bebas: Anda dapat mendistribusikannya
-dan / atau memodifikasinya dibawah ketentuan [Lisensi Publik Mozilla versi
-2.0](https://choosealicense.com/licenses/mpl-2.0/). Silakan lihat berkas [LISENSI](./LICENSE)
-untuk naskah selengkapnya.
+dan atau memodifikasinya sesuai dengan lisensi yang diberikan. Kecuali
+disebutkan secara spesifik, program ini dilisensikan dibawah ketentuan
+[Lisensi Publik Mozilla versi 2.0](https://choosealicense.com/licenses/mpl-2.0/).
+Silakan lihat berkas [LISENSI](./LICENSE) untuk naskah selengkapnya.
