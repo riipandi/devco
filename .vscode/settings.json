@@ -36,5 +36,8 @@
   },
   "files.trimTrailingWhitespace": true,
   "travis.username": "riipandi",
-  "travis.repository": "devco"
+  "travis.repository": "devco",
+  "eslint.alwaysShowStatus": true,
+  "eslint.enable": true,
+  "eslint.runtime": null,
 }
