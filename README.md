@@ -23,7 +23,7 @@
 - [Pengembang dan Kontributor](#pengembang-dan-kontributor)
 - [Komponen dan Pustaka](#komponen-dan-pustaka)
 - [Tim Pengembang](#tim-pengembang)
-- [Berkontribusi](#berkontribusi)
+- [Panduan Berkontribusi](#panduan-berkontribusi)
 - [Lisensi](#lisensi)
 
 ## Ikhtisar
@@ -58,7 +58,7 @@ komputasi disini.
 
 - [@riipandi](https://github.com/riipandi)
 
-## Berkontribusi
+## Panduan Berkontribusi
 
 Kontribusi terhadap proyek ini dipersilahkan. Proyek ini mematuhi
 [_Kode Etik Contributor Covenant_](./CODE_OF_CONDUCT.md). Dengan
