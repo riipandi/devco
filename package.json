@@ -21,8 +21,8 @@
     "cross-env": "^5.2.0",
     "eslint": "^4.0.0",
     "eslint-plugin-vue": "^4.7.1",
-    "img-loader": "^3.0.1",
     "imagemin": "^6.0.0",
+    "img-loader": "^3.0.1",
     "laravel-mix": "^3.0.0"
   }
 }

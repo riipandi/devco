@@ -1,6 +1,6 @@
 <div align="center">
-  <img alt="DevCo Logo" src="https://image.flaticon.com/icons/svg/1312/1312124.svg" height="140" />
-  <h3 align="center">DevCo.ID - Platfom Kolaboratif Developer Indonesia</h3>
+  <img alt="DEVCO Logo" src="https://image.flaticon.com/icons/svg/1312/1312124.svg" height="140" />
+  <h3 align="center">DEVCO - Platfom Kolaboratif Developer Indonesia</h3>
   <p><em>Tempat berbagi ide dan cerita para developer di Indonesia.</em></p>
 </div>
 
@@ -28,8 +28,11 @@
 
 ## Ikhtisar
 
-DevCo.ID (atau DEVCO) adalah sebah platform media kolaboratif bagi
-para pengembang di Indonesia.
+DEVCO / devco.id adalah sebuah platform media kolaboratif bagi
+para pengembang di Indonesia. Sebuah ruang dimana para developer
+dan pegiat teknologi informasi berbagi dan bertukar pikiran.
+Bagikan cerita, tutorial, ide, gagasan kamu seputar dunia
+komputasi disini.
 
 ## Panduan Penggunaan
 
