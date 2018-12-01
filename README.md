@@ -18,11 +18,12 @@
 ### Daftar Isi
 - [Ikhtisar](#ikhtisar)
 - [Panduan Penggunaan](#panduan-penggunaan)
-    - [Kebutuhan](#kebutuhan)
+    - [Kebutuhan Server](#kebutuhan-server)
     - [Proses Instalasi](#proses-instalasi)
-- [Pengembang dan Kontributor](#pengembang-dan-kontributor)
 - [Komponen dan Pustaka](#komponen-dan-pustaka)
-- [Tim Pengembang](#tim-pengembang)
+    - [Dependensi](#dependensi)
+    - [Paket Pustaka](#paket-pustaka)
+- [Pengembang dan Kontributor](#pengembang-dan-kontributor)
 - [Panduan Berkontribusi](#panduan-berkontribusi)
 - [Lisensi](#lisensi)
 
@@ -36,27 +37,30 @@ komputasi disini.
 
 ## Panduan Penggunaan
 
-:TODO
+### Kebutuhan Server
 
-### Kebutuhan
-
-:TODO
+1. PHP >= 7.2.x;
+2. MySQL >= 5.7 atau MariaDB >= 10.3;
+3. Redis Server >= 3.2;
 
 ### Proses Instalasi
 
 :TODO
 
-## Pengembang dan Kontributor
-
-:TODO
-
 ## Komponen dan Pustaka
 
-:TODO
+### Dependensi
 
-## Tim Pengembang
+- :TODO
 
-- [@riipandi](https://github.com/riipandi)
+### Paket Pustaka
+
+- :TODO
+
+## Pengembang dan Kontributor
+
+Saat ini proyek ini dikelola oleh [@Aris Ripandi](https://github.com/riipandi)
+dan dikembangkan bersama para [kontributor](https://github.com/riipandi/devco/graphs/contributors).
 
 ## Panduan Berkontribusi
 
