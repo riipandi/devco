@@ -84,6 +84,7 @@ class User extends Authenticatable
                 return $this->avatar;
             }
         }
+
         return asset('images/avatar.png');
     }
 }
