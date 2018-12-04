@@ -29,7 +29,6 @@
                     <a href="//laravel-news.com" target="_blank">News</a>
                     <a href="//github.com/riipandi/devco" target="_blank">GitHub</a>
                 </div>
-                {{-- {{ settings()->get('mail_host') }} --}}
             </div>
         </div>
 

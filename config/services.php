@@ -41,20 +41,26 @@ return [
     ],
 
     'github' => [
-        'client_id'     => env('GITHUB_CLIENT'),
-        'client_secret' => env('GITHUB_SECRET'),
-        'redirect'      => config('app.url').'/oauth/github/callback',
+        'client_id'     => settings('oauth_github_client', env('GITHUB_CLIENT')),
+        'client_secret' => settings('oauth_github_secret', env('GITHUB_SECRET')),
+        'redirect'      => config('app.url').'/auth/github/callback',
     ],
 
     'google' => [
-        'client_id'     => env('GOOGLE_CLIENT'),
-        'client_secret' => env('GOOGLE_SECRET'),
-        'redirect'      => config('app.url').'/oauth/google/callback',
+        'client_id'     => settings('oauth_google_client', env('GOOGLE_CLIENT')),
+        'client_secret' => settings('oauth_google_secret', env('GOOGLE_SECRET')),
+        'redirect'      => config('app.url').'/auth/google/callback',
+    ],
+
+    'facebook' => [
+        'client_id'     => settings('oauth_facebook_client', env('FACEBOOK_CLIENT')),
+        'client_secret' => settings('oauth_facebook_secret', env('FACEBOOK_SECRET')),
+        'redirect'      => config('app.url').'/auth/facebook/callback',
     ],
 
     'twitter' => [
-        'client_id'     => env('TWITTER_CLIENT'),
-        'client_secret' => env('TWITTER_SECRET'),
-        'redirect'      => config('app.url').'/oauth/twitter/callback',
+        'client_id'     => settings('oauth_twitter_client', env('TWITTER_CLIENT')),
+        'client_secret' => settings('oauth_twitter_secret', env('TWITTER_SECRET')),
+        'redirect'      => config('app.url').'/auth/twitter/callback',
     ],
 ];
