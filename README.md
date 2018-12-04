@@ -50,7 +50,8 @@ komputasi disini.
 ```bash
 # Dependensi
 composer update --no-interaction
-yarn install && yarn dev
+yarn install --non-interactive --ignore-optional
+yarn dev
 
 # Inisiasi
 php artisan migrate:fresh --seed
