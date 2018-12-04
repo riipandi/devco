@@ -24,7 +24,7 @@
             </div>
             <div class="content">
                 <div class="title m-b-md">{{ config('app.name') }}</div>
-                <div class="links">
+                <div class="links m-b-md">
                     <a href="//laracasts.com" target="_blank">Laracasts</a>
                     <a href="//laravel-news.com" target="_blank">News</a>
                     <a href="//github.com/riipandi/devco" target="_blank">GitHub</a>
@@ -33,6 +33,6 @@
         </div>
 
         <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ mix('js/app.js') }}"></script>
     </body>
 </html>
