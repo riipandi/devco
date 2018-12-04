@@ -12,7 +12,6 @@ Route::get('dashboard', 'DashboardController@index')->name('dashboard');
 
 // Passport Routes
 Route::group(['prefix' => 'passport', 'middleware' => 'auth'], function () {
-
     Route::get('/', function () {
         return redirect(route('passport.clients'));
     });
@@ -28,5 +27,4 @@ Route::group(['prefix' => 'passport', 'middleware' => 'auth'], function () {
     Route::get('authorized', function () {
         return view('passport.authorized');
     })->name('passport.authorized');
-
 });

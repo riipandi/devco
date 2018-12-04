@@ -58,7 +58,7 @@ class User extends Authenticatable
         $this->attributes['password'] = Hash::make($password);
     }
 
-   /**
+    /**
      * Mark the given user's email as verified.
      *
      * @return bool
