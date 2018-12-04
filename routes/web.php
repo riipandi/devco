@@ -11,7 +11,7 @@ Route::get('logout', 'Auth\LogoutController@logout')->name('logout');
 Route::get('dashboard', 'DashboardController@index')->name('dashboard');
 
 // Passport Routes
-Route::group(['prefix' => 'passport', 'middleware' => 'auth'], function() {
+Route::group(['prefix' => 'passport', 'middleware' => 'auth'], function () {
 
     Route::get('/', function () {
         return redirect(route('passport.clients'));

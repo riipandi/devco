@@ -18,7 +18,7 @@ class LogoutController extends Controller
             return redirect('login')->with(['warning' => 'You have not logged in before!']);
         }
 
-        activity()->log('User with id '. auth()->user()->id .' - '. auth()->user()->name .' has been logged out.');
+        activity()->log('User with id '.auth()->user()->id.' - '.auth()->user()->name.' has been logged out.');
 
         auth()->logout();
 

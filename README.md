@@ -21,8 +21,8 @@
     - [Kebutuhan Server](#kebutuhan-server)
     - [Proses Instalasi](#proses-instalasi)
 - [Komponen dan Pustaka](#komponen-dan-pustaka)
-    - [Dependensi](#dependensi)
-    - [Paket Pustaka](#paket-pustaka)
+    - [Backend](#backend)
+    - [Frontend](#frontend)
 - [Pengembang dan Kontributor](#pengembang-dan-kontributor)
 - [Panduan Berkontribusi](#panduan-berkontribusi)
 - [Lisensi](#lisensi)
@@ -40,15 +40,15 @@ komputasi disini.
 ### Kebutuhan Server
 
 1. PHP >= 7.2;
-2. Nodejs >= 10.x;
-3. Yarn >=
+2. Nodejs >= 10.13;
+3. Yarn >= 1.12;
 4. MySQL >= 5.7 atau MariaDB >= 10.3;
 5. Redis Server >= 3.2;
 
 ### Proses Instalasi
 
 ```bash
-# Instal dependensi
+# Dependensi
 composer update --no-interaction
 yarn install && yarn dev
 
@@ -59,21 +59,36 @@ php artisan vendor:publish --tag=telescope-assets --force
 php artisan storage:link
 ```
 
-(opsional) generate dummy user: `php artisan db:seed --class=UsersTableSeeder`
+_(opsional)_ generate dummy user : `php artisan db:seed --class=UsersTableSeeder`
 
 ## Komponen dan Pustaka
 
-### Dependensi
+### Backend
 
-- :TODO
+| Komponen                      | Dokumentasi                                     |
+|:------------------------------|:------------------------------------------------|
+| laravel/framework             | https://laravel.com/docs/5.7                    |
+| guzzlehttp/guzzle             | https://github.com/guzzle/guzzle                |
+| laravel/passport              | https://laravel.com/docs/5.7/passport           |
+| laravel/socialite             | https://laravel.com/docs/5.7/socialite          |
+| laravel/telescope             | https://laravel.com/docs/5.7/telescope          |
+| laravolt/avatar               | https://github.com/laravolt/avatar              |
+| predis/predis                 | https://github.com/nrk/predis                   |
+| spatie/laravel-activitylog    | https://github.com/spatie/laravel-activitylog   |
+| spatie/laravel-permission     | https://github.com/spatie/laravel-permission    |
+| spatie/valuestore             | https://github.com/spatie/valuestore            |
 
-### Paket Pustaka
+### Frontend
 
-- :TODO
+| Komponen         | Dokumentasi                                |
+|:-----------------|:-------------------------------------------|
+| Vue.js           | https://vuejs.org/v2/guide                 |
+| Bootstrap        | https://getbootstrap.com/docs/4.1          |
+| Font Awesome     | https://fontawesome.com/icons?d=gallery    |
 
 ## Pengembang dan Kontributor
 
-Saat ini proyek ini dikelola oleh [@Aris Ripandi](https://github.com/riipandi)
+Saat ini proyek ini dikelola oleh [Aris Ripandi](https://github.com/riipandi)
 dan dikembangkan bersama para [kontributor](https://github.com/riipandi/devco/graphs/contributors).
 
 ## Panduan Berkontribusi

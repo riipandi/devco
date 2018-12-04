@@ -3,9 +3,9 @@
 namespace App\Console\Commands;
 
 use App\User;
+use Avatar;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Storage;
-use Avatar;
 
 class UserCreateAdmin extends Command
 {
@@ -43,7 +43,7 @@ class UserCreateAdmin extends Command
         $usermail = $this->option('email');
         $userpass = $this->option('password');
 
-        if (!$usermail OR !$userpass) {
+        if (!$usermail or !$userpass) {
             $this->error(PHP_EOL.'Please identify user by email and specify new password!');
             exit;
         }

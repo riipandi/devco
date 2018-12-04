@@ -25,7 +25,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'username', 'email', 'password', 'avatar'
+        'name', 'username', 'email', 'password', 'avatar',
     ];
 
     /**
@@ -60,6 +60,7 @@ class User extends Authenticatable
 
    /**
      * Mark the given user's email as verified.
+     *
      * @return bool
      */
     public function markEmailAsVerified()
@@ -71,6 +72,7 @@ class User extends Authenticatable
 
     /**
      * Generate user avatar url.
+     *
      * @return string
      */
     public function getAvatarUrlAttribute()

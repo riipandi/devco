@@ -2,9 +2,9 @@
 
 @section('content')
 <div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <passport-authorized-clients></passport-authorized-clients>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <passport-authorized></passport-authorized>
         </div>
     </div>
 </div>
