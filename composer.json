@@ -14,9 +14,14 @@
     "guzzlehttp/guzzle": "^6.3",
     "laravel/framework": "5.7.*",
     "laravel/passport": "^7.0",
+    "laravel/socialite": "^3.2",
     "laravel/telescope": "^1.0",
     "laravel/tinker": "^1.0",
-    "predis/predis": "^1.1"
+    "laravolt/avatar": "^2.1",
+    "predis/predis": "^1.1",
+    "spatie/laravel-activitylog": "^3.1",
+    "spatie/laravel-permission": "^2.28",
+    "spatie/valuestore": "^1.2"
   },
   "require-dev": {
     "beyondcode/laravel-dump-server": "^1.0",

@@ -39,13 +39,27 @@ komputasi disini.
 
 ### Kebutuhan Server
 
-1. PHP >= 7.2.x;
-2. MySQL >= 5.7 atau MariaDB >= 10.3;
-3. Redis Server >= 3.2;
+1. PHP >= 7.2;
+2. Nodejs >= 10.x;
+3. Yarn >=
+4. MySQL >= 5.7 atau MariaDB >= 10.3;
+5. Redis Server >= 3.2;
 
 ### Proses Instalasi
 
-:TODO
+```bash
+# Instal dependensi
+composer update --no-interaction
+yarn install && yarn dev
+
+# Inisiasi
+php artisan migrate:fresh --seed
+php artisan user:createadmin --email=admin@devco.test --password=admin
+php artisan vendor:publish --tag=telescope-assets --force
+php artisan storage:link
+```
+
+(opsional) generate dummy user: `php artisan db:seed --class=UsersTableSeeder`
 
 ## Komponen dan Pustaka
 

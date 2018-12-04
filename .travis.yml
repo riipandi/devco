@@ -41,7 +41,7 @@ before_install:
   - mysql -e 'CREATE DATABASE IF NOT EXISTS testing;'
 
 install:
-  - travis_retry composer install --dev --no-interaction --optimize-autoloader --no-suggest
+  - travis_retry composer install --no-interaction --optimize-autoloader --no-suggest
   - travis_retry yarn install
   - travis_retry yarn production
 

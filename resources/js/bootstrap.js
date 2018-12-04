@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
 window._ = require('lodash');
 
 /**
@@ -21,11 +23,6 @@ window.axios = require('axios');
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-/**
- * Register the CSRF Token as a common header with Axios so that
- * all outgoing HTTP requests automatically have it attached.
- */
-
 let token = document.head.querySelector('meta[name="csrf-token"]');
 
 if (token) {
@@ -33,3 +30,11 @@ if (token) {
 } else {
   console.error('CSRF token not found: https://bit.ly/2q54adw');
 }
+
+/**
+ * Load Vue libraries and the goodies.
+ */
+
+window.Vue = require('vue');
+
+window.Vue.component('font-awesome-icon', FontAwesomeIcon)

@@ -40,4 +40,21 @@ return [
         ],
     ],
 
+    'github' => [
+        'client_id'     => env('GITHUB_CLIENT'),
+        'client_secret' => env('GITHUB_SECRET'),
+        'redirect'      => config('app.url') . '/oauth/github/callback',
+    ],
+
+    'google' => [
+        'client_id'     => env('GOOGLE_CLIENT'),
+        'client_secret' => env('GOOGLE_SECRET'),
+        'redirect'      => config('app.url') . '/oauth/google/callback',
+    ],
+
+    'twitter' => [
+        'client_id'     => env('TWITTER_CLIENT'),
+        'client_secret' => env('TWITTER_SECRET'),
+        'redirect'      => config('app.url') . '/oauth/twitter/callback',
+    ],
 ];

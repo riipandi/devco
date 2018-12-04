@@ -44,8 +44,8 @@ mewakili sebuah proyek atau komunitas termasuk menggunakan alamat email resmi pr
 
 ## Penegakan
 
-Kejdian perilaku kasar, pelecehan, atau tidak dapat diterima yang terjadi
-dapat dilaporkan kepada tim inti proyek di [INSERT EMAIL ADDRESS]. Semua keluhan
+Kejadian perilaku kasar, pelecehan, atau tidak dapat diterima yang terjadi
+dapat dilaporkan kepada tim inti proyek di ripandi@pm.me. Semua keluhan
 akan ditinjau dan diselidiki dan akan menghasilkan tanggapan yang dianggap perlu
 dan sesuai dengan keadaan. Tim inti proyek berkewajiban menjaga kerahasiaan pelapor berkenaan dengan pelapor suatu insiden.
 Rincian lebih lanjut tentang kebijakan penegakan khusus akan dipublikasikan secara terpisah.

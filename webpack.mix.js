@@ -11,23 +11,13 @@ const mix = require("laravel-mix");
  |
  */
 
+mix.copyDirectory('resources/images', 'public/images');
+mix.copy('resources/images/favicon.ico', 'public/favicon.ico');
+
 mix
   .js("resources/js/app.js", "public/js")
   .sass("resources/sass/app.scss", "public/css")
   .sass("resources/sass/web.scss", "public/css");
-
-// mix.webpackConfig({
-//   module: {
-//     rules: [
-//       {
-//         enforce: 'pre',
-//         test: /\.(js|vue)$/,
-//         loader: 'eslint-loader',
-//         exclude: /node_modules/
-//       }
-//     ]
-//   }
-// })
 
 if (mix.inProduction()) {
   mix.version();
