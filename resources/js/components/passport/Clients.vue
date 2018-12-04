@@ -14,7 +14,7 @@
                     </span>
 
                     <a class="action-link" tabindex="-1" @click="showCreateClientForm">
-                        Create New Client
+                        <fa-icon class="mr-1" :icon="['fas', 'plus']" /> Create New Client
                     </a>
                 </div>
             </div>

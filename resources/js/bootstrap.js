@@ -1,16 +1,17 @@
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 window._ = require('lodash');
-
-/**
- * Load jQuery and the Bootstrap jQuery plugin which provides support
- * for JavaScript based Bootstrap features such as modals and tabs.
- */
 
 try {
   window.Popper = require('popper.js').default;
   window.$ = window.jQuery = require('jquery');
   require('bootstrap');
+
+  // FontAwesome v5
+  require('@fortawesome/fontawesome');
+  require('@fortawesome/fontawesome-free-solid');
+  require('@fortawesome/fontawesome-free-regular');
+  require('@fortawesome/fontawesome-free-brands');
 } catch (e) {}
 
 /**
@@ -37,4 +38,4 @@ if (token) {
 
 window.Vue = require('vue');
 
-window.Vue.component('font-awesome-icon', FontAwesomeIcon)
+window.Vue.component('fa-icon', FontAwesomeIcon)
