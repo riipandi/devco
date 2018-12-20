@@ -35,11 +35,16 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
-        $this->mapApiRoutes();
-
-        $this->mapWebRoutes();
-
-        //
+        switch(request()->getPort()) {
+            case 80:
+            case 443:
+                $this->mapApiRoutes();
+                $this->mapWebRoutes();
+                break;
+            case config('admin.port'):
+                $this->mapAdminWebRoutes();
+                break;
+        }
     }
 
     /**
@@ -52,8 +57,8 @@ class RouteServiceProvider extends ServiceProvider
     protected function mapWebRoutes()
     {
         Route::middleware('web')
-             ->namespace($this->namespace)
-             ->group(base_path('routes/web.php'));
+            ->namespace($this->namespace)
+            ->group(base_path('routes/web.php'));
     }
 
     /**
@@ -66,8 +71,16 @@ class RouteServiceProvider extends ServiceProvider
     protected function mapApiRoutes()
     {
         Route::prefix('api')
-             ->middleware('api')
-             ->namespace($this->namespace)
-             ->group(base_path('routes/api.php'));
+            ->middleware('api')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/api.php'));
+    }
+
+    protected function mapAdminWebRoutes()
+    {
+        Route::prefix(config('admin.prefix'))
+            ->middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/app.php'));
     }
 }
