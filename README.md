@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://travis-ci.org/riipandi/devco"><img src="https://travis-ci.org/riipandi/devco.svg" alt="Build Status"></a>
-  <a href="https://buddy.works/"><img src="https://app.buddy.works/ruhaycreative/devco/pipelines/pipeline/162534/badge.svg?token=d7c3e693bc482a0e18287637dd2d22e5545e4b8692ee9693373adc64036f922d" alt="Deploy Status"></a>
+  <a href="https://buddy.works/"><img src="https://app.buddy.works/ruhaycreative/devco/pipelines/pipeline/165403/badge.svg?token=d7c3e693bc482a0e18287637dd2d22e5545e4b8692ee9693373adc64036f922d" alt="Deploy Status"></a>
   <a href="https://github.styleci.io/repos/144719625"><img src="https://github.styleci.io/repos/144719625/shield?branch=master" alt="StyleCI"></a>
   <a href="https://scrutinizer-ci.com/g/riipandi/devco/?branch=master"><img src="https://scrutinizer-ci.com/g/riipandi/devco/badges/quality-score.png?b=master" alt="Code Quality"></a>
   <a href="https://codeclimate.com/github/riipandi/devco/maintainability"><img src="https://api.codeclimate.com/v1/badges/5b7c15adca5e099faa23/maintainability"></a>
@@ -18,11 +18,11 @@
 ### Daftar Isi
 - [Ikhtisar](#ikhtisar)
 - [Panduan Penggunaan](#panduan-penggunaan)
-    - [Kebutuhan Server](#kebutuhan-server)
-    - [Proses Instalasi](#proses-instalasi)
+  - [Kebutuhan Server](#kebutuhan-server)
+  - [Proses Instalasi](#proses-instalasi)
 - [Komponen dan Pustaka](#komponen-dan-pustaka)
-    - [Backend](#backend)
-    - [Frontend](#frontend)
+  - [Backend](#backend)
+  - [Frontend](#frontend)
 - [Pengembang dan Kontributor](#pengembang-dan-kontributor)
 - [Panduan Berkontribusi](#panduan-berkontribusi)
 - [Lisensi](#lisensi)
