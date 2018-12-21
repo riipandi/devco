@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Set specific admin configuration variables here
+ * Set specific admin configuration variables here.
  */
 
 return [

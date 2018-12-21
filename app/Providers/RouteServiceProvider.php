@@ -35,7 +35,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
-        switch(request()->getPort()) {
+        switch (request()->getPort()) {
             case 80:
             case 443:
                 $this->mapApiRoutes();
