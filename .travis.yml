@@ -42,9 +42,14 @@ before_script:
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.12.3
   - export PATH=$HOME/.yarn/bin:$PATH
-  - psql -p 5433 -U postgres -c "CREATE DATABASE testing;"
-  - psql -p 5433 -U postgres -c "CREATE USER foo WITH PASSWORD 'bar';"
-  - psql -p 5433 -U postgres -c "CREATE EXTENSION 'uuid-ossp';"
+
+  - sudo sed -i -e '/local.*peer/s/postgres/all/' -e 's/peer\|md5/trust/g' /etc/postgresql/*/main/pg_hba.conf
+  - sudo service postgresql restart
+  - sleep 1
+
+  - psql -p $PGPORT -U postgres -c "CREATE DATABASE testing;"
+  - psql -p $PGPORT -U postgres -c "CREATE USER foo WITH PASSWORD 'bar';"
+  - psql -p $PGPORT -U postgres -c "CREATE EXTENSION 'uuid-ossp';"
 
 install:
   - travis_retry pip install -r requirements.txt
