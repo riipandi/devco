@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # run:
-# gunicorn -b 127.0.0.1:2368 sample:api
+# gunicorn -b 127.0.0.1:6465 sample:api
 
 from falcon import falcon
 
