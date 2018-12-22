@@ -72,7 +72,7 @@ yarn install --non-interactive --ignore-optional
 yarn dev
 
 # Supervisor service
-cp supervisor.conf /etc/supervisor/conf.d/falcon-api.conf
+cp supervisor.conf /etc/supervisor/conf.d/devco-api.conf
 
 sudo supervisorctl reread
 sudo systemctl restart supervisor
