@@ -4,11 +4,11 @@ sudo: false
 
 addons:
   postgresql: "11"
-  # apt:
-  #   packages:
-  #   - postgresql-11
-  #   - postgresql-client-11
-  #   - postgresql-contrib-11
+  apt:
+    packages:
+    - postgresql-11
+    - postgresql-client-11
+    # - postgresql-contrib-11
 
 env:
   - TRAVIS_NODE_VERSION="8" PGPORT=5433
