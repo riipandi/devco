@@ -34,8 +34,8 @@ before_script:
   - cp .env.travis .env
   # - do migration
 
-before_install:
-  - mysql -e 'CREATE DATABASE IF NOT EXISTS testing;'
+# before_install:
+  # - mysql -e 'CREATE DATABASE IF NOT EXISTS testing;'
 
 install:
   - travis_retry pip install -r requirements.txt
