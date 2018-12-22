@@ -66,6 +66,7 @@ And you may need a related dependency library for a PostgreSQL database.
 rm -rf .venv ; virtualenv -p python3 .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+deactivate
 
 # Dependensi
 yarn install --non-interactive --ignore-optional
@@ -74,10 +75,10 @@ yarn dev
 # Supervisor service
 cp supervisor.conf /etc/supervisor/conf.d/devco-api.conf
 
-sudo supervisorctl reread
-sudo systemctl restart supervisor
-sudo systemctl status supervisor
-sudo supervisorctl status
+supervisorctl reread
+systemctl restart supervisor
+systemctl status supervisor
+supervisorctl status
 ```
 
 ## Komponen dan Pustaka

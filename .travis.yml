@@ -1,16 +1,14 @@
 language: python
 
-dist: xenial
-
 sudo: true
 
 addons:
-  postgresql: "11"
+  postgresql: "10"
   apt:
     packages:
-    - postgresql-11
-    - postgresql-client-11
-    - postgresql-contrib-11
+    - postgresql-10
+    - postgresql-client-10
+    - postgresql-contrib-10
 
 env:
   - TRAVIS_NODE_VERSION="8" PGPORT=5433 PGUSER=postgres
@@ -19,7 +17,8 @@ matrix:
   fast_finish: true
   include:
   - python: "3.6"
-  - python: "3.7"
+  # - python: "3.7"
+  #   dist: xenial
   # - python: "pypy3.5"
 
 # virtualenv:
