@@ -7,15 +7,10 @@ python:
 
 addons:
   postgresql: "11"
-  apt:
-    packages:
-    - postgresql-11
-    - postgresql-client-11
 
 env:
-  global:
-    - PGPORT=5433
-    - TRAVIS_NODE_VERSION="8"
+  - PGPORT=5432
+  - TRAVIS_NODE_VERSION="8"
 
 matrix:
   fast_finish: true
