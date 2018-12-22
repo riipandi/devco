@@ -8,9 +8,9 @@ addons:
     - postgresql-client-11
 
 env:
+  - TRAVIS_NODE_VERSION="8"
   global:
     - PGPORT=5432
-    - TRAVIS_NODE_VERSION="8"
 
 matrix:
   fast_finish: true
