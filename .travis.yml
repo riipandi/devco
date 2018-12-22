@@ -1,9 +1,14 @@
 language: python
 
 addons:
-  mariadb: "10.3"
+  postgresql: "11"
+  apt:
+    packages:
+    - postgresql-11
+    - postgresql-client-11
 
 env:
+  - PGPORT=5432
   - TRAVIS_NODE_VERSION="8"
 
 matrix:
@@ -11,6 +16,9 @@ matrix:
   include:
     - php: "3.6"
     - php: "3.7"
+
+virtualenv:
+  system_site_packages: true
 
 notifications:
   email: false
