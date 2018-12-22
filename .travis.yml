@@ -4,7 +4,7 @@ addons:
   postgresql: "11"
 
 env:
-  - TRAVIS_NODE_VERSION="8" PGPORT=5432
+  - TRAVIS_NODE_VERSION="8" PGPORT=5433
 
 matrix:
   fast_finish: true
@@ -14,7 +14,7 @@ matrix:
   - name: "Python 3.7"
     python: "3.7"
   - name: "PyPy 3.7"
-    python: "3.7"
+    python: "pypy3.7"
 
 virtualenv:
   system_site_packages: true
