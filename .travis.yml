@@ -1,8 +1,4 @@
-language: php
-
-# php:
-#   - "7.2"
-#   - "7.3"
+language: python
 
 addons:
   mariadb: "10.3"
@@ -13,8 +9,8 @@ env:
 matrix:
   fast_finish: true
   include:
-    - php: "7.2"
-    - php: "7.3"
+    - php: "3.6"
+    - php: "3.7"
 
 notifications:
   email: false
@@ -22,28 +18,21 @@ notifications:
 cache:
   yarn: true
   directories:
-    - $HOME/.composer/cache
     - node_modules
-    - vendor
 
 services:
   - redis-server
 
 before_script:
   - cp .env.travis .env
-  - php artisan key:generate
-  - php artisan migrate:fresh
+  # - do migration
 
 before_install:
-  - phpenv config-rm xdebug.ini || true
-  - printf "\n" | pecl install -f redis
-  - travis_retry composer self-update
   - mysql -e 'CREATE DATABASE IF NOT EXISTS testing;'
 
 install:
-  - travis_retry composer install --no-interaction --optimize-autoloader --no-suggest
+  - travis_retry pip install -r requirements.txt
   - travis_retry yarn install
-  - travis_retry yarn production
 
-script:
-  - vendor/bin/phpunit --coverage-text
+# script:
+#   - vendor/bin/phpunit --coverage-text
