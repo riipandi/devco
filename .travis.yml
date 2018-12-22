@@ -9,8 +9,7 @@ addons:
   postgresql: "11"
 
 env:
-  - PGPORT=5432
-  - TRAVIS_NODE_VERSION="8"
+  - PGPORT=5432 TRAVIS_NODE_VERSION="8"
 
 matrix:
   fast_finish: true
