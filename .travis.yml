@@ -47,9 +47,9 @@ before_install:
   - sudo service postgresql restart
   - sleep 1
 
-  - psql -p $PGPORT -U postgres -c "CREATE DATABASE testing;"
-  - psql -p $PGPORT -U postgres -c "CREATE USER foo WITH PASSWORD 'bar';"
-  - psql -p $PGPORT -U postgres -c "CREATE EXTENSION 'uuid-ossp';"
+  - psql -p $PGPORT -U postgres -c 'CREATE DATABASE testing;'
+  - psql -p $PGPORT -U postgres -c 'CREATE USER foo WITH PASSWORD "bar";'
+  - psql -p $PGPORT -U postgres -c 'CREATE EXTENSION "uuid-ossp";'
 
 install:
   - travis_retry pip install -r requirements.txt
