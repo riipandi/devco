@@ -1,7 +1,5 @@
 language: python
 
-dist: xenial
-
 sudo: required
 
 addons:
@@ -18,8 +16,9 @@ env:
 matrix:
   fast_finish: true
   include:
-  - python: "3.7"
   - python: "3.6"
+  - python: "3.7"
+    dist: xenial
   # - python: "pypy3.5"
 
 # virtualenv:
