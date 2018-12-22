@@ -246,11 +246,11 @@ dan dikembangkan bersama para [kontributor](https://github.com/riipandi/devco/gr
 
 ## Panduan Berkontribusi
 
-Kontribusi terhadap proyek ini dipersilahkan. Proyek ini mematuhi
-[_Kode Etik Contributor Covenant_](./CODE_OF_CONDUCT.md). Dengan
-berpartisipasi, Anda diharapkan untuk menjunjung kode ini. Silahkan
-baca terlebih dahulu [panduan berkontribusi](./CONTRIBUTING.md).
-Untuk pertanyaan, silahkan mengirimkan email ke ripandi@pm.me.
+Kontribusi terhadap proyek ini dipersilahkan dan terbuka bagi siapapun.
+Silahkan baca terlebih dahulu [panduan berkontribusi](./CONTRIBUTING.md).
+Dengan berpartisipasi, anda diharapkan untuk menjunjung [kode etik](./CODEOFCONDUCT.md).
+Untuk pertanyaan, silahkan mengirimkan email ke manajer proyek di alamat
+ripandi@pm.me.
 
 ## Lisensi
 
