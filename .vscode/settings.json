@@ -19,7 +19,7 @@
     "**/docker/": true,
     "**/node_modules": true,
     "**/tests": false,
-    "**/CO*.md": true,
+    "**/CO*.md": false,
   },
   "files.trimTrailingWhitespace": true,
   "travis.username": "riipandi",
