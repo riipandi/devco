@@ -54,5 +54,6 @@ install:
   - travis_retry pip install -r requirements.txt
   - travis_retry yarn install
 
-# script:
+script:
+  - echo "All process has been complete!"
 #   - pytest
