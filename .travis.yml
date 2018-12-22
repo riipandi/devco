@@ -1,9 +1,5 @@
 language: python
 
-python:
-  - "3.6"
-  - "3.7"
-
 addons:
   postgresql: "11"
   apt:
@@ -12,8 +8,15 @@ addons:
     - postgresql-client-11
 
 env:
-  - PGPORT=5432
-  - TRAVIS_NODE_VERSION="8"
+  global:
+    - PGPORT=5432
+    - TRAVIS_NODE_VERSION="8"
+
+matrix:
+  fast_finish: true
+  include:
+    - python: "3.6"
+    - python: "3.7"
 
 virtualenv:
   system_site_packages: true
