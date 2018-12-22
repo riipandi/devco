@@ -3,11 +3,12 @@ language: python
 sudo: true
 
 addons:
-  postgresql: "10"
+  postgresql: "11"
   apt:
     packages:
-    - postgresql-10
-    - postgresql-client-10
+    - postgresql-11
+    - postgresql-client-11
+    - postgresql-contrib-11
 
 env:
   - TRAVIS_NODE_VERSION="8" PGPORT=5433
@@ -29,6 +30,7 @@ notifications:
 cache:
   yarn: true
   directories:
+    - $HOME/virtualenv
     - node_modules
 
 services:
@@ -38,8 +40,11 @@ before_script:
   - cp .env.travis .env
   # - do migration
 
-# before_install:
-  # - mysql -e 'CREATE DATABASE IF NOT EXISTS testing;'
+before_install:
+  - npm install -g yarn --cache-min 999999999
+  - psql -U postgres -c "CREATE DATABASE testing;"
+  - psql -U postgres -c "CREATE USER foo WITH PASSWORD 'bar';"
+  - psql -U postgres -c "CREATE EXTENSION 'uuid-ossp';"
 
 install:
   - travis_retry pip install -r requirements.txt
