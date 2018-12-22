@@ -13,7 +13,9 @@ addons:
     - postgresql-client-11
 
 env:
-  - TRAVIS_NODE_VERSION="8"
+  global:
+    - PGPORT=5433
+    - TRAVIS_NODE_VERSION="8"
 
 matrix:
   fast_finish: true
@@ -44,4 +46,4 @@ install:
   - travis_retry yarn install
 
 # script:
-#   - vendor/bin/phpunit --coverage-text
+#   - pytest
