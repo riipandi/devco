@@ -16,8 +16,8 @@ env:
 matrix:
   fast_finish: true
   include:
+  # - python: "3.7.1"
   - python: "3.6.7"
-  - python: "3.7.1"
   - python: "pypy3.5"
 
 # virtualenv:
@@ -40,12 +40,11 @@ before_script:
   # - do migration
 
 before_install:
-  - sudo apt-key adv --fetch-keys http://dl.yarnpkg.com/debian/pubkey.gpg
-  - echo "deb http://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-  - sudo apt-get update -qq && sudo apt-get install -yqq yarn
-  - psql -U postgres -c "CREATE DATABASE testing;"
-  - psql -U postgres -c "CREATE USER foo WITH PASSWORD 'bar';"
-  - psql -U postgres -c "CREATE EXTENSION 'uuid-ossp';"
+  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.12.3
+  - export PATH=$HOME/.yarn/bin:$PATH
+  - psql -p 5433 -U postgres -c "CREATE DATABASE testing;"
+  - psql -p 5433 -U postgres -c "CREATE USER foo WITH PASSWORD 'bar';"
+  - psql -p 5433 -U postgres -c "CREATE EXTENSION 'uuid-ossp';"
 
 install:
   - travis_retry pip install -r requirements.txt
