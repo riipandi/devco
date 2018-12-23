@@ -64,6 +64,9 @@ And you may need a related dependency library for a PostgreSQL database.
 ```bash
 # Setup environment
 rm -rf .venv ; virtualenv -p python3 .venv
+.venv/bin/pip install gunicorn falcon
+
+# Run inside virtual env
 source .venv/bin/activate
 pip install -r requirements.txt
 deactivate
@@ -77,6 +80,7 @@ cp supervisor.conf /etc/supervisor/conf.d/devco-api.conf
 
 supervisorctl reread
 systemctl restart supervisor
+supervisorctl restart awasdisini_api 
 supervisorctl status
 ```
 
