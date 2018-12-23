@@ -77,7 +77,6 @@ cp supervisor.conf /etc/supervisor/conf.d/devco-api.conf
 
 supervisorctl reread
 systemctl restart supervisor
-systemctl status supervisor
 supervisorctl status
 ```
 
