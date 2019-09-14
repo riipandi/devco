@@ -20,9 +20,6 @@
 - [Panduan Penggunaan](#panduan-penggunaan)
   - [Kebutuhan Server](#kebutuhan-server)
   - [Proses Instalasi](#proses-instalasi)
-- [Komponen dan Pustaka](#komponen-dan-pustaka)
-  - [Backend](#backend)
-  - [Frontend](#frontend)
 - [Pengembang dan Kontributor](#pengembang-dan-kontributor)
 - [Panduan Berkontribusi](#panduan-berkontribusi)
 - [Lisensi](#lisensi)
@@ -61,31 +58,6 @@ php artisan storage:link
 ```
 
 _(opsional)_ generate dummy user : `php artisan db:seed --class=UsersTableSeeder`
-
-## Komponen dan Pustaka
-
-### Backend
-
-| Komponen                      | Dokumentasi                                     |
-|:------------------------------|:------------------------------------------------|
-| laravel/framework             | https://laravel.com/docs/5.7                    |
-| guzzlehttp/guzzle             | https://github.com/guzzle/guzzle                |
-| laravel/passport              | https://laravel.com/docs/5.7/passport           |
-| laravel/socialite             | https://laravel.com/docs/5.7/socialite          |
-| laravel/telescope             | https://laravel.com/docs/5.7/telescope          |
-| laravolt/avatar               | https://github.com/laravolt/avatar              |
-| predis/predis                 | https://github.com/nrk/predis                   |
-| spatie/laravel-activitylog    | https://github.com/spatie/laravel-activitylog   |
-| spatie/laravel-permission     | https://github.com/spatie/laravel-permission    |
-| spatie/valuestore             | https://github.com/spatie/valuestore            |
-
-### Frontend
-
-| Komponen         | Dokumentasi                                |
-|:-----------------|:-------------------------------------------|
-| Vue.js           | https://vuejs.org/v2/guide                 |
-| Bootstrap        | https://getbootstrap.com/docs/4.1          |
-| Font Awesome     | https://fontawesome.com/icons?d=gallery    |
 
 ## Pengembang dan Kontributor
 
